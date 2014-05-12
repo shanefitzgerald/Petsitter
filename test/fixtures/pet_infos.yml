@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pet_name: MyString
+  pet_age: MyString
+  pet_breed: MyString
+  chip_number: 1
+  tag_number: 
+  vet_name: MyString
+  vet_address: MyString
+  vet_phone: 1
+  key_location: MyString
+  food_brand: MyString
+  food_location: MyString
+  feeding_time: 1.5
+  special_feeding_instruction: MyString
+  walking_times: 1.5
+  walking_route_directions: MyString
+  water_instructions: MyString
+  special_instructions: MyString
+  medicine_location: MyString
+  emergency_contact_number: 1
+
+two:
+  pet_name: MyString
+  pet_age: MyString
+  pet_breed: MyString
+  chip_number: 1
+  tag_number: 
+  vet_name: MyString
+  vet_address: MyString
+  vet_phone: 1
+  key_location: MyString
+  food_brand: MyString
+  food_location: MyString
+  feeding_time: 1.5
+  special_feeding_instruction: MyString
+  walking_times: 1.5
+  walking_route_directions: MyString
+  water_instructions: MyString
+  special_instructions: MyString
+  medicine_location: MyString
+  emergency_contact_number: 1
