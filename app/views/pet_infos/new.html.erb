@@ -1,0 +1,28 @@
+<h1>NEW</h1>
+
+<%= form_for @petinfo do |f| %>
+
+	PET NAME: <%= f.text_field :pet_name %>
+	PET AGE: <%= f.text_field :pet_age %>
+	BREED: <%= f.text_field :pet_breed %>
+	CHIP NUMBER: <%= f.text_field :chip_number %>
+	TAG NUMBER: <%= f.text_field :tag_number %>
+	VET NAME: <%= f.text_field :vet_name %>
+	VET ADDRESS: <%= f.text_field :vet_address %>
+	VET PHONE: <%= f.text_field :vet_phone %>
+	KEY LOCATION: <%= f.text_field :key_location %>
+	FOOD BRAND: <%= f.text_field :food_brand %>
+	FOOD LOCATION: <%= f.text_field :food_location %>
+	FEEDING TIME: <%= f.text_field :feeding_time %>
+	SPECIAL FEEDING INSTRUCTIONS: <%= f.text_field :special_feeding_instruction %>
+	WALKING TIME: <%= f.text_field :walking_times %>
+	WALKING ROUTE DIRECTIONS: <%= f.text_field :walking_route_directions %>
+	WATER INSTRUCTIONS: <%= f.text_field :water_instructions %>
+	SPECIAL INSTRUCTIONS: <%= f.text_field :special_instructions %>
+	MEDICINE LOCATION: <%= f.text_field :medicine_location %>
+	EMERGENCY CONTACT: <%= f.text_field :emergency_contact_number %>
+
+
+	<%= f.submit 'Add Pet' %>
+
+  <% end %>

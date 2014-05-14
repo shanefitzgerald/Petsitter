@@ -1,0 +1,70 @@
+<h1>SHOW</h1>
+
+
+    <h1><strong><%= @petinfo.pet_name %></strong></h1>
+    <ul>
+        
+            <li>
+                PET NAME: <%= @petinfo.pet_name %>
+            </li>
+            <li>
+                PET AGE: <%= @petinfo.pet_age %>
+            </li>
+            <li>
+                PET BREED: <%= @petinfo.pet_breed %>
+            </li>
+            <li>
+                CHIP NUMBER: <%= @petinfo.chip_number %>
+            </li>
+            <li>
+                TAG NUMBER: <%= @petinfo.tag_number %>
+            </li>
+            <li>
+                VET NAME: <%= @petinfo.vet_name %>
+            </li>
+            <li>
+                VET ADDRESS: <%= @petinfo.vet_address %>
+            </li>
+            <li>
+                VET PHONE: <%= @petinfo.vet_phone %>
+            </li>
+            <li>
+                KEY LOCATION: <%= @petinfo.key_location %>
+            </li>
+            <li>
+                FOOD BRAND: <%= @petinfo.food_brand %>
+            </li>
+            <li>
+                FOOD LOCATION: <%= @petinfo.food_location %>
+            </li>
+            <li>
+                FEEDING TIME: <%= @petinfo.feeding_time %>
+            </li>
+            <li>
+                SPECIAL FEEDING INSTRUCTIONS: <%= @petinfo.special_feeding_instruction %>
+            </li>
+            <li>
+                WALKING TIMES: <%= @petinfo.walking_times %>
+            </li>
+            <li>
+                WALKING ROUTE: <%= @petinfo.walking_route_directions %>
+            </li>
+            <li>
+                WATER INSTRUCTIONS: <%= @petinfo.water_instructions %>
+            </li>
+            <li>
+                SPECIAL INSTRUCTIONS: <%= @petinfo.special_instructions %>
+            </li>
+            <li>
+                MEDICINE LOCATION: <%= @petinfo.medicine_location %>
+            </li>
+            <li>
+                EMERGENCY CONTACT: <%= @petinfo.emergency_contact_number %>
+            </li>
+
+        
+    </ul>
+
+    <%= link_to 'edit', edit_pet_info_path, class: "button" %>
+    <%= link_to 'new', new_pet_info_path, class: "button" %>
+    <%= link_to 'home', pet_infos_path, class: "button" %>
