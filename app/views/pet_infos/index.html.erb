@@ -1,15 +1,11 @@
 <h1>INDEX</h1>
 
+        <div class="panel panel-default">
+          <% @petinfos.each do |b| %>
+            <div class="panel-heading">
+                <h3 class="panel-title"><%= link_to pet_info_path b do %><strong><%= b.pet_name %></strong></h3>
+                <% end %>
+            </div>
+          <% end %>
+        </div>
 
-  <ul>
-  <% @petinfos.each do |b| %>
-    <li>
-      <%= link_to pet_info_path b do %>
-
-      <strong><%= b.pet_name %></strong>
-
-      <% end %>
-  	</li>
-  <% end %>
-  </ul>
-  <%= link_to 'new', new_pet_info_path, class: "button" %>

@@ -2,68 +2,166 @@
 
 
     <h1><strong><%= @petinfo.pet_name %></strong></h1>
-    <ul>
-        
-            <li>
-                PET NAME: <%= @petinfo.pet_name %>
-            </li>
-            <li>
-                PET AGE: <%= @petinfo.pet_age %>
-            </li>
-            <li>
-                PET BREED: <%= @petinfo.pet_breed %>
-            </li>
-            <li>
-                CHIP NUMBER: <%= @petinfo.chip_number %>
-            </li>
-            <li>
-                TAG NUMBER: <%= @petinfo.tag_number %>
-            </li>
-            <li>
-                VET NAME: <%= @petinfo.vet_name %>
-            </li>
-            <li>
-                VET ADDRESS: <%= @petinfo.vet_address %>
-            </li>
-            <li>
-                VET PHONE: <%= @petinfo.vet_phone %>
-            </li>
-            <li>
-                KEY LOCATION: <%= @petinfo.key_location %>
-            </li>
-            <li>
-                FOOD BRAND: <%= @petinfo.food_brand %>
-            </li>
-            <li>
-                FOOD LOCATION: <%= @petinfo.food_location %>
-            </li>
-            <li>
-                FEEDING TIME: <%= @petinfo.feeding_time %>
-            </li>
-            <li>
-                SPECIAL FEEDING INSTRUCTIONS: <%= @petinfo.special_feeding_instruction %>
-            </li>
-            <li>
-                WALKING TIMES: <%= @petinfo.walking_times %>
-            </li>
-            <li>
-                WALKING ROUTE: <%= @petinfo.walking_route_directions %>
-            </li>
-            <li>
-                WATER INSTRUCTIONS: <%= @petinfo.water_instructions %>
-            </li>
-            <li>
-                SPECIAL INSTRUCTIONS: <%= @petinfo.special_instructions %>
-            </li>
-            <li>
-                MEDICINE LOCATION: <%= @petinfo.medicine_location %>
-            </li>
-            <li>
-                EMERGENCY CONTACT: <%= @petinfo.emergency_contact_number %>
-            </li>
-
-        
-    </ul>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">PET NAME:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.pet_name %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">PET AGE:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.pet_age %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">PET BREED:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.pet_breed %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">CHIP NUMBER:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.chip_number %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">TAG NUMBER:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.tag_number %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">VET NAME:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.vet_name %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">VET ADDRESS:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.vet_address %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">VET PHONE:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.vet_phone %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">KEY LOCATION:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.key_location %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">FOOD LOCATION:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.key_location %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">FOOD BRAND:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.food_brand %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">FOOD LOCATION:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.food_location %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">FEEDING TIME:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.feeding_time %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">SPECIAL FEEDING INSTRUCTIONS:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.special_feeding_instruction %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">WALKING TIMES:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.walking_times %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">WATER INSTRUCTIONS:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.water_instructions %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">MEDICINE LOCATION:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.medicine_location %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">EMERGENCY CONTACT:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.emergency_contact_number %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">SPECIAL INSTRUCTIONS:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.special_instructions %>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">WALKING ROUTE:</h3>
+            </div>
+            <div class="panel-body">
+                <%= @petinfo.walking_route_directions %>
+            </div>
+        </div>
 
     <%= link_to 'edit', edit_pet_info_path, class: "button" %>
     <%= link_to 'new', new_pet_info_path, class: "button" %>
