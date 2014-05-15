@@ -1,10 +1,12 @@
 require "bcrypt"
-class Users
+class User
   include Mongoid::Document
   field :name, type: String
   field :email, type: String
-  field :password, type: String
-end
+  field :password_digest, type: String
+
+  embeds_many :pet_infos
+
 
   def password
     @password

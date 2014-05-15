@@ -20,7 +20,7 @@ class PetInfo
   field :medicine_location, type: String
   field :emergency_contact_number, type: Integer
 
-  embedded_in :petowner
+  embedded_in :user
 end
 
 
