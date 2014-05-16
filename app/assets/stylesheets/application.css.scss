@@ -14,3 +14,11 @@
 
 
 @import 'bootstrap';
+
+.simple_form label {
+  
+  float: left;
+  width: 200px;
+  text-align: right;
+  margin: 2px 10px;
+}
