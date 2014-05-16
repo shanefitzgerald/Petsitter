@@ -6,8 +6,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      session[:remember_token] = @user.id
+      @current_user = @user
       flash[:success] = "You have signed up successfully"
-      redirect_to :root
+      redirect_to pet_infos_path
     else
       render :new
     end

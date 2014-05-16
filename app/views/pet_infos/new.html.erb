@@ -1,30 +1,74 @@
-<h1>NEW</h1>
+<h1>NEW PET</h1>
+
+    <%= form_for @petinfo do |f| %>  
+
+        <div class="required-field-block">
+        <%= f.text_field :pet_name, :placeholder => "Pet Name", :class => "form-control" %>
+		</div>
+
+        <div class="required-field-block">
+        <%= f.text_field :pet_age, :placeholder => "Pet Age", :class => "form-control" %>
+        </div>
+
+        <div class="required-field-block">
+        <%= f.text_field :pet_breed, :placeholder => "Pet Breed", :class => "form-control" %>
+        </div>
+
+        <div class="required-field-block">
+        <%= f.text_field :chip_number, :placeholder => "Chip Number", :class => "form-control" %>
+        </div>
+         <div class="required-field-block">
+        <%= f.text_field :tag_number, :placeholder => "Tag Number", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :vet_name, :placeholder => "Vet Name", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :vet_address, :placeholder => "Vet Address", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :vet_phone, :placeholder => "Vet Phone", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :key_location, :placeholder => "Key Location", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :food_brand, :placeholder => "Food Brand", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :food_location, :placeholder => "Food Location", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :feeding_time, :placeholder => "Feeding Time", :class => "form-control" %>
+        </div>
+    	<div class="required-field-block">
+        <%= f.text_field :special_feeding_instruction, :placeholder => "Special Feeding Instructions", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :walking_times, :placeholder => "Walking Time", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :walking_route_directions, :placeholder => "Walking Directions", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :water_instructions, :placeholder => "Water Instructions", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :special_instructions, :placeholder => "Other Secial Instructions", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :medicine_location, :placeholder => "Medicine Location", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :emergency_contact_number, :placeholder => "Emergency Contact Number", :class => "form-control" %>
+        </div>
 
 
 
-<%= simple_form_for @petinfo do |f| %>
+    
+    
+ 	<%= f.submit "Save Pet", :class => "btn btn-primary" %>
 
-	<%= f.input :pet_name  %>
-	<%= f.input :pet_age, label: 'Pet Age'%>
-	<%= f.input :pet_breed, label: 'Pet Breed'%>
-	<%= f.input :chip_number, label: 'Chip Number'%>
-	<%= f.input :tag_number, label: 'Tag Number'%>
-	<%= f.input :vet_name, label: 'Vet Name'%>
-	<%= f.input :vet_address, label: 'Vet Address'%>
-	<%= f.input :vet_phone, label: 'Vet Phone'%>
-	<%= f.input :key_location, label: 'Key Location'%>
-	<%= f.input :food_brand, label: 'Food Brand'%>
-	<%= f.input :food_location, label: 'Food Location'%>
-	<%= f.input :feeding_time, label: 'Feeding Time'%>
-	<%= f.input :special_feeding_instruction, label: 'Special Feeding Instructions'%>
-	<%= f.input :walking_times, label: 'Walking Time'%>
-	<%= f.input :walking_route_directions, label: 'Walking Route Directions'%>
-	<%= f.input :water_instructions, label: 'Water Instructions'%>
-	<%= f.input :special_instructions, label: 'Special Instructions'%>
-	<%= f.input :medicine_location, label: 'Medicine Location'%>
-	<%= f.input :emergency_contact_number, label: 'Emergency Contact'%>
-
-
-	<%= f.button :submit %>
-
-  <% end %>
+        
+        
+    <% end %>

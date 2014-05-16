@@ -1,12 +1,36 @@
-<h1>NEW_USER</h1>
+<div class="container">
 
-<h1>New User</h1>
+    <div class="login">   
+        <h1>Sign Up</h1>
+        
+    <%= form_for @user do |f| %>  
 
+        <div class="required-field-block">
+        <%= f.text_field :name, :placeholder => "Name", :class => "form-control" %>
+        	<div class="required-icon">
+                <div class="text">*</div>
+            </div>
+		</div>
 
+        <div class="required-field-block">
+        <%= f.text_field :email, :placeholder => "Email", :class => "form-control" %>
+            <div class="required-icon">
 
-<%= form_for @user do |f| %>
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  <%= f.submit %>
-<% end %>
+                <div class="text">*</div>
+            </div>
+        </div>
+
+        <div class="required-field-block">
+        <%= f.password_field :password, :placeholder => "Password", :class => "form-control" %>
+            <div class="required-icon">
+                <div class="text">*</div>
+            </div>
+        </div>
+    
+ 	<%= f.submit "Sign Up!", :class => "btn btn-primary" %>
+
+        
+        
+    <% end %>
+    </div>
+</div>
