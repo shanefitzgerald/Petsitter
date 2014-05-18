@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'simple_form'
 
 gem 'bootstrap_form'
+gem 'actionmailer', '~> 4.0.4'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
