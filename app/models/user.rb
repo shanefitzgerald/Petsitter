@@ -6,7 +6,7 @@ class User
   field :password_digest, type: String
 
   embeds_many :pet_infos
-
+  embeds_many :child_infos
 
   def password
     @password

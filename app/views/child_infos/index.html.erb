@@ -1,0 +1,11 @@
+<h1>CHILDREN</h1>
+
+        <div class="panel panel-default">
+          <% @childinfos.each do |b| %>
+            <div class="panel-heading">
+                <h3 class="panel-title"><%= link_to child_info_path b do %><strong><%= b.child_name %></strong></h3>
+                <% end %>
+            </div>
+          <% end %>
+        </div>
+

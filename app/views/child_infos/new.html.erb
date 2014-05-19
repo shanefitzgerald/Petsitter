@@ -1,0 +1,61 @@
+<h1>NEW CHILD</h1>
+
+    <%= form_for @childinfo do |f| %>  
+
+        <div class="required-field-block">
+        <%= f.text_field :child_name, :placeholder => "Child Name", :class => "form-control" %>
+		</div>
+
+        <div class="required-field-block">
+        <%= f.text_field :child_age, :placeholder => "Child Age", :class => "form-control" %>
+        </div>
+
+        <div class="required-field-block">
+        <%= f.text_field :contact_one, :placeholder => "Contact One", :class => "form-control" %>
+        </div>
+
+        <div class="required-field-block">
+        <%= f.text_field :contact_two, :placeholder => "Contact Two", :class => "form-control" %>
+        </div>
+         <div class="required-field-block">
+        <%= f.text_field :emergency_contact, :placeholder => "Emergency Contact", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :food_drink_hazzard, :placeholder => "Food or Drink Hazzards", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :escape_routes, :placeholder => "Escape Routes", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :home_phone, :placeholder => "Doctor Phone Number", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :doctor_phone, :placeholder => "Key Location", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :special_information, :placeholder => "Special Information", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :neighbor_names, :placeholder => "Neighbor Names", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :firstaidkit_location, :placeholder => "First Aid Kit Location", :class => "form-control" %>
+        </div>
+    	<div class="required-field-block">
+        <%= f.text_field :circuitbreaker_location, :placeholder => "Circut Breaker Location", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :watershutoff_location, :placeholder => "Water Shut Off Location", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :meal_time, :placeholder => "Meal Time", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :bed_time, :placeholder => "Bed Time", :class => "form-control" %>
+        </div>
+        <div class="required-field-block">
+        <%= f.text_field :bedtime_routine, :placeholder => "Bed Time Routine", :class => "form-control" %>
+        </div>    
+    
+ 	<%= f.submit "Enter Child", :class => "btn btn-primary" %>        
+    <% end %>

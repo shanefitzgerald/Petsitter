@@ -17,7 +17,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">PETSITTER</a>
+      <a class="navbar-brand" href="#"><h1>PETSITTER</h1></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,6 +26,8 @@
        <% if current_user %>
         <li><%= link_to "Home", pet_infos_path, class: "btn btn-default navbar-btn" %></li>
         <li><%= link_to "New Pet", new_pet_info_path, class: "btn btn-default navbar-btn" %></li>
+        <li><%= link_to "Baby Sitter", child_infos_path, class: "btn btn-default navbar-btn" %></li>
+        <li><%= link_to "New Child", new_child_info_path, class: "btn btn-default navbar-btn" %></li>
        <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-right">

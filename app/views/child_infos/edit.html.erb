@@ -1,0 +1,27 @@
+<h1>EDIT</h1>
+
+<%= simple_form_for @childinfo do |f| %>
+
+	<%= f.input :child_name, label: "Child Name" %>
+	<%= f.input	:child_age, label: "Child Age" %>
+	<%= f.input	:contact_one, label: "Contact One" %>
+	<%= f.input	:contact_two, label: "Contact Two" %>
+	<%= f.input	:emergency_contact, label: "Emergency Contact" %>
+	<%= f.input	:food_drink_hazzard, label: "Food or Drinks to Avoid" %>
+	<%= f.input	:escape_routes, label: "Escape Routes" %>
+	<%= f.input	:home_phone, label: "Home Phone Number" %>
+	<%= f.input	:doctor_phone, label: "Doctor Phone" %>
+	<%= f.input	:special_information, label: "Special Information" %>
+	<%= f.input	:neighbor_names, label: "Neighbor Names" %>
+	<%= f.input	:firstaidkit_location, label: "First Aid Kit Location" %>
+	<%= f.input	:circuitbreaker_location, label: "Circuit Breaker Location" %>
+	<%= f.input	:watershutoff_location, label: "Water Shutoff Location" %>
+	<%= f.input	:meal_time, label: "Meal Time" %>
+	<%= f.input	:bed_time, label: "Bed Time" %>
+	<%= f.input	:bedtime_routine, label: "Bed Time Routine" %>
+
+
+	<%= f.button :submit %>
+
+  <% end %>
+

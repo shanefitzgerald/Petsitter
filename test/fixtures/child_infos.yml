@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  child_name: MyString
+  child_age: MyString
+  contact_one: MyString
+  contact_two: MyString
+  emergency_contact: MyString
+  food_drink_hazzard: MyString
+  escape_routes: MyString
+  home_phone: MyString
+  doctor_phone: MyString
+  special_information: MyString
+  neighbor_names: MyString
+  firstaidkit_location: MyString
+  circuitbreaker_location: MyString
+  watershutoff_location: MyString
+  meal_time: MyString
+  bed_time: MyString
+  bedtime_routine: MyString
+
+two:
+  child_name: MyString
+  child_age: MyString
+  contact_one: MyString
+  contact_two: MyString
+  emergency_contact: MyString
+  food_drink_hazzard: MyString
+  escape_routes: MyString
+  home_phone: MyString
+  doctor_phone: MyString
+  special_information: MyString
+  neighbor_names: MyString
+  firstaidkit_location: MyString
+  circuitbreaker_location: MyString
+  watershutoff_location: MyString
+  meal_time: MyString
+  bed_time: MyString
+  bedtime_routine: MyString

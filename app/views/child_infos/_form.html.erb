@@ -1,0 +1,67 @@
+<% @petinfos.each do |b| %>
+
+
+    <h1><strong><%= b.pet_name %></strong></h1>
+    <ul>
+        <% @petinfos.each do |b| %>
+            <li>
+                PET NAME: <%= b.pet_name %>
+            </li>
+            <li>
+                PET AGE: <%= b.pet_age %>
+            </li>
+            <li>
+                PET BREED: <%= b.pet_breed %>
+            </li>
+            <li>
+                CHIP NUMBER: <%= b.chip_number %>
+            </li>
+            <li>
+                TAG NUMBER: <%= b.tag_number %>
+            </li>
+            <li>
+                VET NAME: <%= b.vet_name %>
+            </li>
+            <li>
+                VET ADDRESS: <%= b.vet_address %>
+            </li>
+            <li>
+                VET PHONE: <%= b.vet_phone %>
+            </li>
+            <li>
+                KEY LOCATION: <%= b.key_location %>
+            </li>
+            <li>
+                FOOD BRAND: <%= b.food_brand %>
+            </li>
+            <li>
+                FOOD LOCATION: <%= b.food_location %>
+            </li>
+            <li>
+                FEEDING TIME: <%= b.feeding_time %>
+            </li>
+            <li>
+                SPECIAL FEEDING INSTRUCTIONS: <%= b.special_feeding_instruction %>
+            </li>
+            <li>
+                WALKING TIMES: <%= b.walking_times %>
+            </li>
+            <li>
+                WALKING ROUTE: <%= b.walking_route_directions %>
+            </li>
+            <li>
+                WATER INSTRUCTIONS: <%= b.water_instructions %>
+            </li>
+            <li>
+                SPECIAL INSTRUCTIONS: <%= b.special_instructions %>
+            </li>
+            <li>
+                MEDICINE LOCATION: <%= b.medicine_location %>
+            </li>
+            <li>
+                EMERGENCY CONTACT: <%= b.emergency_contact_number %>
+            </li>
+
+        <% end %>
+    </ul>
+<% end %>
